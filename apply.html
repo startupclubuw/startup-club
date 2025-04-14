@@ -1,0 +1,79 @@
+<!-- Created by Akshith Saravanan and Aditya Kumar -->
+<!-- Documented clearly for understanding purposes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Meta Tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Title -->
+  <title>Apply - Startup Club</title>
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+  
+  <!-- ======= Header Navigation ======= -->
+  <header>
+    <div class="container">
+
+      <!-- Logo and Site Name -->
+      <div class="logo-container">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.png" alt="Startup Club Logo" class="logo" />
+          <h1>Startup Club</h1>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav id="desktop-nav" class="fade-in">
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="apply.html">Apply</a>
+        <a href="contact.html">Contact</a> 
+      </nav>
+
+      <!-- Mobile Menu Icon -->
+      <div id="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <!-- Mobile Navigation Links -->
+    <nav id="mobile-nav" class="hidden">
+      <a href="about.html" onclick="toggleMenu()">About</a>
+      <a href="team.html" onclick="toggleMenu()">Team</a>
+      <a href="apply.html" onclick="toggleMenu()">Apply</a>
+      <a href="contact.html" onclick="toggleMenu()">Contact</a> 
+    </nav>
+  </header>
+
+  <!-- ======= Apply Section ======= -->
+  <section id="apply" data-aos="fade-up">
+    <div class="container fade-in">
+      <h2>Applications Now Open</h2>
+
+      <!-- Application Description -->
+      <p>
+        Are you someone who loves brainstorming new ideas, has a "million dollar idea,"
+        and enjoys working on real projects? Apply now!
+      </p>
+
+      <!-- Apply Now Button -->
+      <div class="buttons">
+        <a href="https://forms.gle/6HM6c1C6QotatL9a7" target="_blank" class="primary-button">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= External Scripts ======= -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>

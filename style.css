@@ -1,0 +1,833 @@
+/* Created by Akshith Saravanan and Aditya Kumar */
+
+/* Base Styles for the Body */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f8fa;
+  color: #0a1f2c;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 80px; 
+}
+
+/* Background Pattern */
+.background-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Container for Centered Content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+  background: rgba(213, 237, 249, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem 0;
+}
+
+/* Header Appearance When Scrolled */
+header.scrolled {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox Layout for Header Content */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Logo Image */
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Header Text */
+header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0a1f2c;
+}
+
+/* Navigation Styles */
+nav {
+  margin-top: 0.5rem;
+}
+
+/* Navigation Links */
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #0a1f2c;
+  font-weight: 600;
+}
+
+/* Hero Section */ 
+#hero {
+  background: linear-gradient(135deg, #b1d4e0 0%, #7fb3c8 100%);
+  text-align: center;
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero Content Container */
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero Title */
+#hero h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: #0a1f2c;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Hero Description */
+#hero p {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Buttons Container */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Primary and Secondary Buttons */
+.primary-button, .secondary-button {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+/* Primary Button */
+.primary-button {
+  background-color: #0a1f2c;
+  color: white;
+  border: 2px solid #0a1f2c;
+}
+
+/* Secondary Button */
+.secondary-button {
+  background-color: transparent;
+  color: #0a1f2c;
+  border: 2px solid #0a1f2c;
+}
+
+/* Primary Button Hover Effect */
+.primary-button:hover {
+  background-color: #08304b;
+  border-color: #08304b;
+  transform: translateY(-2px);
+}
+
+/* Secondary Button Hover Effect */
+.secondary-button:hover {
+  background-color: rgba(10, 31, 44, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles for Mobile */  
+@media (max-width: 768px) {
+  #hero {
+    padding: 4rem 1rem;
+  }
+
+  #hero h2 {
+    font-size: 2.5rem;
+  }
+
+  #hero p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .primary-button, .secondary-button {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+/* Section Styles */
+section {
+  padding: 4rem 0;
+}
+
+/* Buttons Container */
+.buttons {
+  margin-top: 2rem;
+}
+
+/* Primary Button */
+button {
+  background-color: #0a1f2c;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Primary Button Hover Effect */
+button:hover {
+  background-color: #08304b;
+}
+
+/* Footer Styles */
+footer {
+  background: #d2e7f2;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Mobile Menu */
+#mobile-menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Rotated Icon */
+#mobile-menu-icon.rotated {
+  transform: rotate(90deg);
+}
+
+/* Mobile Navigation */
+#mobile-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #d2e7f2;
+  text-align: center;
+  transform-origin: top;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: scaleY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Mobile Navigation Visibility */
+#mobile-nav.show {
+  opacity: 1;
+  transform: scaleY(1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile Navigation Links */
+#mobile-nav a {
+  display: block;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Mobile Navigation Link Hover Effect */
+#mobile-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Hidden Element */
+.hidden {
+  display: none !important;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  header .container {
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Desktop Navigation Visibility */
+  #desktop-nav {
+    display: none;
+  }
+  
+  /* Mobile Menu Icon Visibility */
+  #mobile-menu-icon {
+    display: block;
+    padding: 0.5rem;
+    z-index: 1001;
+  }
+  
+  /* Mobile Navigation */
+  #mobile-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Logo Container */
+  .logo-container h1 {
+    font-size: 1.75rem;
+  }
+  
+  /* Logo Image */          
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* First Fade-in Element */
+.fade-in:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+/* Second Fade-in Element */
+.fade-in:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+/* Third Fade-in Element */
+.fade-in:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Fade-in Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About Image */
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* Team Member */
+.team-member {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Team Member Description */
+.team-member::before {
+  content: attr(data-description);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98));
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  color: #333;
+  font-size: 0.9em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Team Member Hover Effect */
+.team-member:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Team Member Image */
+.team-member img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* Team Member Name */
+.team-member h3 {
+  margin: 0.5rem 0;
+  color: #0a1f2c;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+/* Team Member Role */
+.team-member .role {
+  color: #2d3748;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Team Member Major */
+.team-member .major {
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Team Member Image */
+  .team-member img {
+    width: 100%;
+    height: 200px;
+    object-position: center 30%;
+  }
+
+  /* Team Member Name */
+  .team-member h3 {
+    font-size: 1.4rem;
+  }
+
+  /* Team Member Role */
+  .team-member .role {
+    font-size: 1.1rem;
+  }
+
+  /* Team Member Major */
+    .team-member .major {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Styles for Desktop */
+@media (min-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Floating CTA */
+.floating-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0a1f2c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+/* Floating CTA Hover Effect */
+.floating-cta:hover {
+  background: #08304b;
+  transform: translateY(-3px);
+}
+
+/* Team Member */
+.team-member {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Team Member Hover Effect */
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+/* Team Member Image */
+.team-member img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+/* Contact Form Input and Textarea */
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Contact Form Button */
+.contact-form button {
+  background-color: #0a1f2c;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Contact Form Button Hover Effect */
+.contact-form button:hover {
+  background-color: #08304b;
+}
+
+/* Logo Link */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Logo Link Hover Effect */
+.logo-link:hover {
+  opacity: 0.9;
+}
+
+/* Social Buttons */
+.social-buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+/* Social Button */
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 2.5rem;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 280px;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Instagram Button */
+.social-button.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.2);
+}
+
+/* LinkedIn Button */
+.social-button.linkedin {
+  background: linear-gradient(45deg, #0077B5, #0091ca);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.2);
+}
+
+/* Social Button Hover Effect */
+.social-button:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Button Active Effect */
+.social-button:active {
+  transform: translateY(-2px) scale(0.98);
+}
+
+/* Social Icon */
+.social-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+/* Social Icon Hover Effect */
+.social-button:hover .social-icon {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .social-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Social Button */
+  .social-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 2rem;
+  }
+
+  /* Social Icon */
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+}
+
+/* Add smooth hover effect for all interactive elements */
+a, button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Add subtle hover effect for navigation links */
+nav a {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+/* Navigation Link Hover Effect */  
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+/* Navigation Link Hover Effect */
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Modal Visibility */
+.modal.show {
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Visibility */
+.modal.show .modal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Close Modal */
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Close Modal Hover Effect */
+.close-modal:hover {
+  background: #e2e8f0;
+  transform: rotate(90deg);
+}
+
+/* Modal Image */
+.modal-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 25%;
+  margin: 0 auto 1.5rem;
+  border: 4px solid #f1f5f9;
+}
+
+/* Modal Title */
+.modal h2 {
+  margin: 0;
+  color: #0a1f2c;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Modal Role */
+.modal-role {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1.5rem;
+  text-align: center;
+}
+
+/* Modal Description */
+.modal-description {
+  color: #334155;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .modal-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .modal h2 {
+    font-size: 1.5rem;
+  }
+}

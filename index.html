@@ -1,0 +1,82 @@
+<!-- Created by Akshith Saravanan and Aditya Kumar -->
+<!-- Documented clearly for understanding purposes -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags for responsiveness and character encoding -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title of the website -->
+  <title>Startup Club</title>
+
+  <!-- CSS and Fonts -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+   <!-- Decorative background pattern -->
+  <div class="background-pattern"></div>
+
+  <!-- ======= Header Navigation ======= -->
+  <header>
+    <div class="container">
+      <!-- Logo and site name -->
+      <div class="logo-container">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.png" alt="Startup Club Logo" class="logo">
+          <h1>Startup Club</h1>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav id="desktop-nav" class="fade-in">
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="apply.html">Apply</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div id="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <!-- Mobile Navigation Toggle Icon -->
+    <nav id="mobile-nav" class="hidden">
+      <a href="about.html" onclick="toggleMenu()">About</a>
+      <a href="team.html" onclick="toggleMenu()">Team</a>
+      <a href="apply.html" onclick="toggleMenu()">Apply</a>
+      <a href="contact.html" onclick="toggleMenu()">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="container fade-in">
+      <div class="hero-content">
+        <h2>Innovate. Collaborate.<br>Build Together.</h2>
+        <p>A community of innovators, risk-takers, and problem-solvers dedicated to bringing ideas into reality.</p>
+        
+        <!-- Call to Action Button -->
+        <div class="hero-buttons">
+          <a href="apply.html" class="primary-button">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer>  
+    <div class="container fade-in">
+      <p>© 2025 Startup Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- External JS and AOS Animation Initialization -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>

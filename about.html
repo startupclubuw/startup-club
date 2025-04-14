@@ -1,0 +1,92 @@
+<!-- Created by Akshith Saravanan and Aditya Kumar -->
+<!-- Documented clearly for understanding purposes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Meta Tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Title -->
+  <title>About - Startup Club</title>
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+  <!-- ======= Header Navigation ======= -->
+  <header>
+    <div class="container">
+      <!-- Logo and Site Name -->
+      <div class="logo-container">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.png" alt="Startup Club Logo" class="logo" />
+          <h1>Startup Club</h1>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav id="desktop-nav" class="fade-in">
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="apply.html">Apply</a>
+        <a href="contact.html">Contact</a> 
+      </nav>
+
+      <!-- Mobile Menu Icon -->
+      <div id="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <!-- Mobile Navigation Links -->
+    <nav id="mobile-nav" class="hidden">
+      <a href="about.html" onclick="toggleMenu()">About</a>
+      <a href="team.html" onclick="toggleMenu()">Team</a>
+      <a href="apply.html" onclick="toggleMenu()">Apply</a>
+      <a href="contact.html" onclick="toggleMenu()">Contact</a> 
+    </nav>
+  </header>
+
+  <!-- ======= About Section ======= -->
+  <section id="about" data-aos="fade-up">
+    <div class="container fade-in">
+      <h2>About Us</h2>
+
+      <!-- Club Description -->
+      <p>
+        The Startup Club is a community for entrepreneurial minds eager to innovate, 
+        collaborate, and bring ideas to life. Our purpose is to foster a culture of 
+        creativity and growth, providing students with the tools, mentorship, 
+        and opportunities to turn their visions into reality. By connecting like-minded 
+        individuals we aim to create a supportive network where members can share insights, 
+        brainstorm solutions, and form impactful collaborations. 
+        The club plans on actively seeking funding opportunities, organizing workshops, 
+        and hosting guest speakers, including successful entrepreneurs and industry experts to inspire and guide our members. 
+        Whether you have a business idea or are looking to contribute your skills to a startup team, 
+        The Startup Club is your launchpad for turning aspirations into achievements. 
+        Together, we aim to redefine innovation and create meaningful impact both on campus and beyond.
+      </p>
+
+      <!-- Social Media Buttons -->
+      <div class="social-buttons">
+        <a href="https://www.instagram.com/startupclubuw/" target="_blank" class="social-button instagram">
+          <img src="./images/instagram-icon.png" alt="Instagram" class="social-icon" loading="lazy">
+          Follow us on Instagram
+        </a>
+        <a href="https://www.linkedin.com/company/startupclubuw/" target="_blank" class="social-button linkedin">
+          <img src="./images/linkedin-icon.png" alt="LinkedIn" class="social-icon" loading="lazy">
+          Follow us on LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- External Scripts and AOS Initialization -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

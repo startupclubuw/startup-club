@@ -1,0 +1,211 @@
+<!-- Created by Akshith Saravanan and Aditya Kumar -->
+<!-- Documented clearly for understanding purposes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Title -->
+  <title>Meet the Team - Startup Club</title>
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  
+  <!-- ======= Header Navigation ======= -->
+  <header>
+    <div class="container">
+      <!-- Logo and Site Name -->
+      <div class="logo-container">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.png" alt="Startup Club Logo" class="logo" />
+          <h1>Startup Club</h1>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav id="desktop-nav" class="fade-in">
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="apply.html">Apply</a>
+        <a href="contact.html">Contact</a> 
+      </nav>
+
+      <!-- Mobile Menu Icon -->
+      <div id="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <!-- Mobile Navigation Links -->
+    <nav id="mobile-nav" class="hidden">
+      <a href="about.html" onclick="toggleMenu()">About</a>
+      <a href="team.html" onclick="toggleMenu()">Team</a>
+      <a href="apply.html" onclick="toggleMenu()">Apply</a>
+      <a href="contact.html" onclick="toggleMenu()">Contact</a>
+    </nav>
+  </header>
+  
+  <!-- ======= Team Section ======= -->
+  <section id="team" data-aos="fade-up">
+    <div class="container fade-in">
+      <h2>Meet The Team</h2>
+
+      <!-- Team Members Grid -->
+      <div class="team-grid">
+
+        <!-- Team Member: Akshith -->
+        <div class="team-member" onclick="openModal('akshith')" 
+          data-description="A visionary leader with a passion for innovation and entrepreneurship. Akshith brings extensive experience in software development and startup ecosystems.">
+          <img src="images/akshith.jpg" alt="Akshith Saravanan">
+          <p class="role">Founder and President</p>
+          <h3>Akshith Saravanan</h3>
+          <p class="major">Major: Computer Science</p>
+        </div>
+
+        <!-- Team Member: Sumedha -->
+        <div class="team-member" onclick="openModal('sumedha')"
+          data-description="With a strong background in economics and business strategy, Sumedha brings analytical thinking and strategic planning to the team.">
+          <img src="images/sumedha.jpg" alt="Sumedha Komawar">
+          <p class="role">Vice President</p>
+          <h3>Sumedha Komawar</h3>
+          <p class="major">Major: Economics</p>
+        </div>
+
+        <!-- Team Member: Saurav -->
+        <div class="team-member" onclick="openModal('saurav')"
+          data-description="A natural networker with a keen eye for valuable connections, Saurav leads our partnership initiatives with innovation and strategic vision.">
+          <img src="images/saurav.jpg" alt="Saurav Mukherjee">
+          <p class="role">Director of Partnerships</p>
+          <h3>Saurav Mukherjee</h3>
+          <p class="major">Major: Engineering</p>
+        </div>
+
+        <!-- Team Member: Kanishka -->
+        <div class="team-member" onclick="openModal('kanishka')"
+          data-description="Leading our marketing initiatives with creativity and strategic insight, Kanishka helps build and maintain our brand presence.">
+          <img src="images/kanishka.jpg" alt="Kanishka Karnani">
+          <p class="role">Director of Marketing</p>
+          <h3>Kanishka Karnani</h3>
+          <p class="major">Major: Business Admin</p>
+        </div>
+
+        <!-- Team Member: Aditya -->
+        <div class="team-member" onclick="openModal('aditya')"
+          data-description="Organizing impactful events and workshops, Aditya creates valuable learning opportunities for our community members.">
+          <img src="images/aditya.jpg" alt="Aditya Kumar">
+          <p class="role">Director of Events</p>
+          <h3>Aditya Kumar</h3>
+          <p class="major">Major: Computer Science</p>
+        </div>
+
+        <!-- Team Member: Sashwath -->
+        <div class="team-member" onclick="openModal('sashwath')"
+          data-description="Driving technological innovation and implementation, Sashwath ensures our technical infrastructure supports our mission effectively.">
+          <img src="images/sashwath.jpg" alt="Sashwath Narayanan">
+          <p class="role">Director of Technology</p>
+          <h3>Sashwath Narayanan</h3>
+          <p class="major">Major: Engineering</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Team Modals (Popups) ======= -->
+  <div id="modal-akshith" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('akshith')">&times;</span>
+      <img src="images/akshith.jpg" alt="Akshith Saravanan" class="modal-image">
+      <h2>Akshith Saravanan</h2>
+      <p class="modal-role">Founder and President</p>
+      <p class="modal-description">
+        A visionary leader with a passion for innovation and entrepreneurship. 
+        Akshith brings extensive experience in software development and startup ecosystems. 
+        His mission is to create a vibrant community where ideas flourish and ambitious students 
+        can transform their dreams into reality.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal-sumedha" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('sumedha')">&times;</span>
+      <img src="images/sumedha.jpg" alt="Sumedha Komawar" class="modal-image">
+      <h2>Sumedha Komawar</h2>
+      <p class="modal-role">Vice President</p>
+      <p class="modal-description">
+        With a strong background in economics and business strategy, 
+        Sumedha brings analytical thinking and strategic planning to the team. 
+        She's passionate about creating opportunities for students to explore entrepreneurship 
+        and develop their business acumen.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal-saurav" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('saurav')">&times;</span>
+      <img src="images/saurav.jpg" alt="Saurav Mukherjee" class="modal-image">
+      <h2>Saurav Mukherjee</h2>
+      <p class="modal-role">Director of Partnerships</p>
+      <p class="modal-description">
+        A natural networker with a keen eye for valuable connections, 
+        Saurav leads our partnership initiatives. His engineering background combined with business acumen 
+        helps bridge the gap between technical innovation and market opportunities.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal-kanishka" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('kanishka')">&times;</span>
+      <img src="images/kanishka.jpg" alt="Kanishka Karnani" class="modal-image">
+      <h2>Kanishka Karnani</h2>
+      <p class="modal-role">Director of Marketing</p>
+      <p class="modal-description">
+        Leading our marketing initiatives with creativity and strategic insight, 
+        Kanishka helps build and maintain our brand presence. 
+        Her expertise in business administration brings a professional approach to our marketing strategies 
+        and community engagement efforts.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal-aditya" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('aditya')">&times;</span>
+      <img src="images/aditya.jpg" alt="Aditya Kumar" class="modal-image">
+      <h2>Aditya Kumar</h2>
+      <p class="modal-role">Director of Events</p>
+      <p class="modal-description">
+        Organizing impactful events and workshops, 
+        Aditya creates valuable learning opportunities for our community members. 
+        With a background in Computer Science, he brings technical expertise to event planning and ensures seamless 
+        execution of our programs.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal-sashwath" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('sashwath')">&times;</span>
+      <img src="images/sashwath.jpg" alt="Sashwath Narayanan" class="modal-image">
+      <h2>Sashwath Narayanan</h2>
+      <p class="modal-role">Director of Technology</p>
+      <p class="modal-description">
+        Driving technological innovation and implementation, 
+        Sashwath ensures our technical infrastructure supports our mission effectively. 
+        His engineering background enables him to develop and maintain robust solutions for our organization's needs.
+      </p>
+    </div>
+  </div>
+
+  <!-- ======= External Scripts ======= -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
