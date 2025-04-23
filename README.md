@@ -15,6 +15,7 @@
 
 - [Description](#description)
 - [Features](#features)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
@@ -40,6 +41,16 @@ The Startup Club website is a modern, responsive web platform designed for the U
 - 👥 Team member profiles
 - 🔗 Social media integration
 - 📊 Application system
+
+---
+
+## 🛠️ Prerequisites
+
+Before you begin, make sure you have the following:
+
+- A code editor like [VS Code](https://code.visualstudio.com/)
+- The [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for local preview
+- A modern browser (e.g., Chrome, Firefox, Safari)
 
 ---
 
@@ -153,7 +164,7 @@ git push origin feature/your-feature-name
 ## License
 
 This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.  
-You may view, use, and contribute to this project for non-commercial purposes with proper attribution.  
+You may view, use, and contribute to this project for non-commercial purposes as long as you provide appropriate credit and do not use the material for commercial gain.  
 To learn more, visit [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ---
