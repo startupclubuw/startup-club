@@ -2,7 +2,7 @@
 
 ![Startup Club Logo](images/logo.png)
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/startupclubuw/startup-club/issues)
 [![Last Updated](https://img.shields.io/github/last-commit/startupclubuw/startup-club.svg)](https://github.com/startupclubuw/startup-club/commits)
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://startupclubuw.com)
@@ -151,7 +151,10 @@ git push origin feature/your-feature-name
 ---
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.  
+You may view, use, and contribute to this project for non-commercial purposes with proper attribution.  
+To learn more, visit [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ---
 
