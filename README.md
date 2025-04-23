@@ -6,6 +6,7 @@
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/startupclubuw/startup-club/issues)
 [![Last Updated](https://img.shields.io/github/last-commit/startupclubuw/startup-club.svg)](https://github.com/startupclubuw/startup-club/commits)
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://startupclubuw.com)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=github)](https://startupclubuw.com)
 
 🔗 **Live Demo**: [https://startupclubuw.com](https://startupclubuw.com)
 
@@ -44,7 +45,7 @@ The Startup Club website is a modern, responsive web platform designed for the U
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 Before you begin, make sure you have the following:
 
