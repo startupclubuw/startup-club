@@ -13,7 +13,7 @@ body {
 }
 
 /* Background Pattern */
-.background-pattern {
+.backgroundPattern {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,7 +63,7 @@ header .container {
 }
 
 /* Logo Container */
-.logo-container {
+.logoContainer {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -107,7 +107,7 @@ nav a {
 }
 
 /* Hero Content Container */
-.hero-content {
+.heroContent {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
@@ -134,7 +134,7 @@ nav a {
 }
 
 /* Hero Buttons Container */
-.hero-buttons {
+.heroButtons {
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -142,7 +142,7 @@ nav a {
 }
 
 /* Primary and Secondary Buttons */
-.primary-button, .secondary-button {
+.primaryButton, .secondaryButton {
   padding: 1rem 2rem;
   border-radius: 8px;
   font-weight: 600;
@@ -152,28 +152,28 @@ nav a {
 }
 
 /* Primary Button */
-.primary-button {
+.primaryButton {
   background-color: #0a1f2c;
   color: white;
   border: 2px solid #0a1f2c;
 }
 
 /* Secondary Button */
-.secondary-button {
+.secondaryButton {
   background-color: transparent;
   color: #0a1f2c;
   border: 2px solid #0a1f2c;
 }
 
 /* Primary Button Hover Effect */
-.primary-button:hover {
+.primaryButton:hover {
   background-color: #08304b;
   border-color: #08304b;
   transform: translateY(-2px);
 }
 
 /* Secondary Button Hover Effect */
-.secondary-button:hover {
+.secondaryButton:hover {
   background-color: rgba(10, 31, 44, 0.1);
   transform: translateY(-2px);
 }
@@ -193,13 +193,13 @@ nav a {
     padding: 0 1rem;
   }
 
-  .hero-buttons {
+  .heroButtons {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
 
-  .primary-button, .secondary-button {
+  .primaryButton, .secondaryButton {
     width: 80%;
     text-align: center;
   }
@@ -242,7 +242,7 @@ footer {
 }
 
 /* Mobile Menu */
-#mobile-menu-icon {
+#mobileMenuIcon {
   display: none;
   font-size: 2rem;
   cursor: pointer;
@@ -250,12 +250,12 @@ footer {
 }
 
 /* Rotated Icon */
-#mobile-menu-icon.rotated {
+#mobileMenuIcon.rotated {
   transform: rotate(90deg);
 }
 
 /* Mobile Navigation */
-#mobile-nav {
+#mobileNav {
   position: absolute;
   top: 100%;
   left: 0;
@@ -271,7 +271,7 @@ footer {
 }
 
 /* Mobile Navigation Visibility */
-#mobile-nav.show {
+#mobileNav.show {
   opacity: 1;
   transform: scaleY(1);
   display: flex;
@@ -279,7 +279,7 @@ footer {
 }
 
 /* Mobile Navigation Links */
-#mobile-nav a {
+#mobileNav a {
   display: block;
   padding: 1rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -287,7 +287,7 @@ footer {
 }
 
 /* Mobile Navigation Link Hover Effect */
-#mobile-nav a:hover {
+#mobileNav a:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -303,26 +303,26 @@ footer {
   }
   
   /* Desktop Navigation Visibility */
-  #desktop-nav {
+  #desktopNav {
     display: none;
   }
   
   /* Mobile Menu Icon Visibility */
-  #mobile-menu-icon {
+  #mobileMenuIcon {
     display: block;
     padding: 0.5rem;
     z-index: 1001;
   }
   
   /* Mobile Navigation */
-  #mobile-nav {
+  #mobileNav {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
   
   /* Logo Container */
-  .logo-container h1 {
+  .logoContainer h1 {
     font-size: 1.75rem;
   }
   
@@ -334,23 +334,23 @@ footer {
 }
 
 /* Fade-in Animation */
-.fade-in {
+.fadeIn {
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
 }
 
 /* First Fade-in Element */
-.fade-in:nth-child(1) {
+.fadeIn:nth-child(1) {
   animation-delay: 0.2s;
 }
 
 /* Second Fade-in Element */
-.fade-in:nth-child(2) {
+.fadeIn:nth-child(2) {
   animation-delay: 0.4s;
 }
 
 /* Third Fade-in Element */
-.fade-in:nth-child(3) {
+.fadeIn:nth-child(3) {
   animation-delay: 0.6s;
 }
 
@@ -367,7 +367,7 @@ footer {
 }
 
 /* About Image */
-.about-image {
+.aboutImage {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
@@ -375,14 +375,14 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.about-section {
+.aboutSection {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4rem 2rem;
 }
 
-.about-content {
+.aboutContent {
   max-width: 700px;
   background-color: #fff;
   padding: 2rem 2.5rem;
@@ -390,14 +390,14 @@ footer {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.about-content h2 {
+.aboutContent h2 {
   font-size: 2rem;
   color: #222;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.about-content p {
+.aboutContent p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
@@ -405,21 +405,21 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .about-content {
+  .aboutContent {
     padding: 1.5rem;
   }
 
-  .about-content h2 {
+  .aboutContent h2 {
     font-size: 1.5rem;
   }
 
-  .about-content p {
+  .aboutContent p {
     font-size: 1rem;
   }
 }
 
 /* Team Grid */
-.team-grid {
+.teamGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
@@ -428,7 +428,7 @@ footer {
 }
 
 /* Team Member */
-.team-member {
+.teamMember {
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -440,7 +440,7 @@ footer {
 }
 
 /* Team Member Description */
-.team-member::before {
+.teamMember::before {
   content: attr(data-description);
   position: absolute;
   top: 0;
@@ -464,13 +464,13 @@ footer {
 }
 
 /* Team Member Hover Effect */
-.team-member:hover::before {
+.teamMember:hover::before {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* Team Member Image */
-.team-member img {
+.teamMember img {
   width: 300px;
   height: 300px;
   border-radius: 8px;
@@ -480,7 +480,7 @@ footer {
 }
 
 /* Team Member Name */
-.team-member h3 {
+.teamMember h3 {
   margin: 0.5rem 0;
   color: #0a1f2c;
   font-size: 1.5rem;
@@ -490,7 +490,7 @@ footer {
 }
 
 /* Team Member Role */
-.team-member .role {
+.teamMember .role {
   color: #2d3748;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -500,7 +500,7 @@ footer {
 }
 
 /* Team Member Major */
-.team-member .major {
+.teamMember .major {
   color: #4a5568;
   font-size: 1.1rem;
   margin: 0.5rem 0;
@@ -510,44 +510,44 @@ footer {
 
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
-  .team-grid {
+  .teamGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 
   /* Team Member Image */
-  .team-member img {
+  .teamMember img {
     width: 100%;
     height: 200px;
     object-position: center 30%;
   }
 
   /* Team Member Name */
-  .team-member h3 {
+  .teamMember h3 {
     font-size: 1.4rem;
   }
 
   /* Team Member Role */
-  .team-member .role {
+  .teamMember .role {
     font-size: 1.1rem;
   }
 
   /* Team Member Major */
-    .team-member .major {
+    .teamMember .major {
     font-size: 1rem;
   }
 }
 
 /* Responsive Styles for Desktop */
 @media (min-width: 1200px) {
-  .team-grid {
+  .teamGrid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 }
 
 /* Floating CTA */
-.floating-cta {
+.floatingCta {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -563,35 +563,13 @@ footer {
 }
 
 /* Floating CTA Hover Effect */
-.floating-cta:hover {
+.floatingCta:hover {
   background: #08304b;
   transform: translateY(-3px);
 }
 
-/* Team Member */
-.team-member {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-/* Team Member Hover Effect */
-.team-member:hover {
-  transform: translateY(-5px);
-}
-
-/* Team Member Image */
-.team-member img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
 /* Contact Form */
-.contact-form {
+.contactForm {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -599,8 +577,8 @@ footer {
 }
 
 /* Contact Form Input and Textarea */
-.contact-form input,
-.contact-form textarea {
+.contactForm input,
+.contactForm textarea {
   padding: 1rem;
   border: 1px solid #cbd5e0;
   border-radius: 8px;
@@ -609,7 +587,7 @@ footer {
 }
 
 /* Contact Form Button */
-.contact-form button {
+.contactForm button {
   background-color: #0a1f2c;
   color: white;
   padding: 0.9rem;
@@ -622,12 +600,12 @@ footer {
 }
 
 /* Contact Form Button Hover Effect */
-.contact-form button:hover {
+.contactForm button:hover {
   background-color: #08304b;
 }
 
 /* Logo Link */
-.logo-link {
+.logoLink {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -636,12 +614,12 @@ footer {
 }
 
 /* Logo Link Hover Effect */
-.logo-link:hover {
+.logoLink:hover {
   opacity: 0.9;
 }
 
 /* Social Buttons */
-.social-buttons {
+.socialButtons {
   display: flex;
   gap: 2rem;
   margin-top: 3rem;
@@ -650,7 +628,7 @@ footer {
 }
 
 /* Social Button */
-.social-button {
+.socialButton {
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -670,32 +648,32 @@ footer {
 }
 
 /* Instagram Button */
-.social-button.instagram {
+.socialButton.instagram {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: white;
   box-shadow: 0 4px 15px rgba(220, 39, 67, 0.2);
 }
 
 /* LinkedIn Button */
-.social-button.linkedin {
+.socialButton.linkedin {
   background: linear-gradient(45deg, #0077B5, #0091ca);
   color: white;
   box-shadow: 0 4px 15px rgba(0, 119, 181, 0.2);
 }
 
 /* Social Button Hover Effect */
-.social-button:hover {
+.socialButton:hover {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* Social Button Active Effect */
-.social-button:active {
+.socialButton:active {
   transform: translateY(-2px) scale(0.98);
 }
 
 /* Social Icon */
-.social-icon {
+.socialIcon {
   width: 28px;
   height: 28px;
   object-fit: contain;
@@ -704,13 +682,13 @@ footer {
 }
 
 /* Social Icon Hover Effect */
-.social-button:hover .social-icon {
+.socialButton:hover .socialIcon {
   transform: scale(1.1) rotate(-5deg);
 }
 
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
-  .social-buttons {
+  .socialButtons {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -718,14 +696,14 @@ footer {
   }
   
   /* Social Button */
-  .social-button {
+  .socialButton {
     width: 100%;
     max-width: 300px;
     padding: 1rem 2rem;
   }
 
   /* Social Icon */
-  .social-icon {
+  .socialIcon {
     width: 24px;
     height: 24px;
     margin-right: 0.5rem;
@@ -783,7 +761,7 @@ nav a:hover::after {
 }
 
 /* Modal Content */
-.modal-content {
+.modalContent {
   background: white;
   padding: 2rem;
   border-radius: 16px;
@@ -797,13 +775,13 @@ nav a:hover::after {
 }
 
 /* Modal Visibility */
-.modal.show .modal-content {
+.modal.show .modalContent {
   transform: translateY(0);
   opacity: 1;
 }
 
 /* Close Modal */
-.close-modal {
+.closeModal {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -820,13 +798,13 @@ nav a:hover::after {
 }
 
 /* Close Modal Hover Effect */
-.close-modal:hover {
+.closeModal:hover {
   background: #e2e8f0;
   transform: rotate(90deg);
 }
 
 /* Modal Image */
-.modal-image {
+.modalImage {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -845,7 +823,7 @@ nav a:hover::after {
 }
 
 /* Modal Role */
-.modal-role {
+.modalRole {
   color: #64748b;
   font-size: 1.1rem;
   margin: 0.5rem 0 1.5rem;
@@ -853,7 +831,7 @@ nav a:hover::after {
 }
 
 /* Modal Description */
-.modal-description {
+.modalDescription {
   color: #334155;
   line-height: 1.6;
   margin: 0;
@@ -862,13 +840,13 @@ nav a:hover::after {
 
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
-  .modal-content {
+  .modalContent {
     padding: 1.5rem;
     margin: 1rem;
   }
   
   /* Modal Image */
-  .modal-image {
+  .modalImage {
     width: 120px;
     height: 120px;
   }

@@ -3,8 +3,8 @@
 
 // ======= Toggle Mobile Navigation Menu =======
 function toggleMenu() {
-  const mobileNav = document.getElementById('mobile-nav');
-  const menuIcon = document.getElementById('mobile-menu-icon');
+  const mobileNav = document.getElementById('mobileNav');
+  const menuIcon = document.getElementById('mobileMenuIcon');
 
   if (mobileNav.classList.contains('hidden')) {
     mobileNav.classList.remove('hidden');
@@ -49,7 +49,7 @@ window.addEventListener("scroll", () => {
 
 // ======= Open Modal for Team Member =======
 function openModal(memberId) {
-  const modal = document.getElementById(`modal-${memberId}`);
+  const modal = document.getElementById(`modal${memberId.charAt(0).toUpperCase() + memberId.slice(1)}`);
   document.body.style.overflow = 'hidden'; // Prevent background scroll
   modal.classList.add('show');
 
@@ -70,7 +70,7 @@ function openModal(memberId) {
 
 // ======= Close Modal for Team Member =======
 function closeModal(memberId) {
-  const modal = document.getElementById(`modal-${memberId}`);
+  const modal = document.getElementById(`modal${memberId.charAt(0).toUpperCase() + memberId.slice(1)}`);
   document.body.style.overflow = ''; // Restore scroll
   modal.classList.remove('show');
 }
