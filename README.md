@@ -94,14 +94,19 @@ To deploy changes:
 ## Project Structure
 ```plaintext
 startup-club/
-├── index.html     # Home page
-├── about.html     # About page
-├── team.html      # Team page
-├── apply.html     # Application page
-├── contact.html   # Contact page
-├── style.css      # Main stylesheet
-├── script.js      # JavaScript file
-└── images/        # Image assets
+├── index.html          # Home page
+├── about/
+│   └── index.html     # About page
+├── team/
+│   └── index.html     # Team page
+├── apply/
+│   └── index.html     # Application page
+├── contact/
+│   └── index.html     # Contact page
+├── style.css          # Main stylesheet
+├── script.js          # JavaScript file
+├── images/            # Image assets
+└── CNAME              # Custom domain configuration
 ```
 
 ---
@@ -112,6 +117,19 @@ startup-club/
 - This applies to all new code and refactored code, including meta tag content values where appropriate.
 - This follows industry standards and keeps our code clean, readable, and easy to maintain.
 - Please follow this convention for all future contributions.
+
+---
+
+## URL Structure
+
+The website uses clean, SEO-friendly URLs without file extensions:
+- Home: `/` (or `/index.html`)
+- About: `/about/`
+- Team: `/team/`
+- Apply: `/apply/`
+- Contact: `/contact/`
+
+This structure is achieved by organizing each page in its own folder with an `index.html` file, which is a common practice for static sites and provides better user experience.
 
 ---
 
