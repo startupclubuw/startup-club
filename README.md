@@ -106,6 +106,15 @@ startup-club/
 
 ---
 
+## 💡 Code Style
+
+- All custom class names, id names, and custom attribute names in our HTML, CSS, and JavaScript use **camelCase** (for example: `headerContent`, `teamMember`, `navContainer`, `mobileMenuIcon`, `modalAkshith`, `whatWeDo`).
+- This applies to all new code and refactored code, including meta tag content values where appropriate.
+- This follows industry standards and keeps our code clean, readable, and easy to maintain.
+- Please follow this convention for all future contributions.
+
+---
+
 ## Usage
 
 ### Navigation
